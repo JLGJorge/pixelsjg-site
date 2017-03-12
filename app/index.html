@@ -6,6 +6,7 @@
   <title>Jorge Garcia Portfolio</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 </head>
 <body>
   <header>
@@ -21,101 +22,129 @@
   </header>
 
   <div class="large-hero">
-    <img src="assets/images/bg.png">
-    <h1>Hi! I'm Jorge Garcia</h1>
-    <h2>IT'S NICE TO MEET YOU</h2>
-    <p>I'm a Web Designer and Developer. I focus on fun, clean designs and sensible UX/UI.</p>
-    <p><a href="#">LEARN MORE</a></p>
+    <picture>
+    <source srcset="assets/images/hero-large.png 1920w, assets/images/hero-large-hi.png 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero-medium.png 1380w, assets/images/hero-medium-hi.png 2760w" media="(min-width: 990px)">
+    <source srcset="assets/images/hero-small.png 990w, assets/images/hero-small-hi.png 1980w" media="(min-width: 640px)">
+      <img srcset="assets/images/hero-smaller.png 640w, assets/images/hero-smaller-hi.png 1280w" class="large-hero__image">
+    </picture>
+    <div class="wrapper">
+      <div class="large-hero__text-content">
+      <h1 class="large-hero__title">Hi! I'm <span class="large-hero__myname">Jorge Garcia</span></h1>
+      <h2 class="large-hero__subtitle">IT'S NICE TO MEET YOU</h2>
+      <p class="large-hero__description">I'm a Web Designer and Developer.<br> I focus on fun, clean designs and sensible UX/UI.</p>
+      <p><a href="#" class="btn"><strong>LEARN MORE</strong></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="about" class="page-section page-section--lgray">
+  <div class="wrapper">
+    <h2 class="headline__title headline--centered"><strong>ABOUT ME </strong><span class="headline--bracket">}</span></h2>
+    <div class="row row--gutters">
+      <div class="row__medium-4 row__medium-4--larger">
+      <div class="headline--centered">
+        <img class="row--image" src="assets/images/jg.png" alt="Jorge Garcia">
+         
+            <p class="headline--name"><strong>Jorge Garcia</strong><br>
+            <span>social media icons</span>
+            <p><a href="#" class="btn"><strong>CONTACT ME</strong></a></p>
+            
+        </div>
+      </div>
+    <div class="row__medium-8 row__medium-4--smaller">
+    <div class="generic-content-container">
+      <p>I have many years experience as a front-end developer, creating websites fully responsive, and tested in a wide range of devices.</p>
+     
+
+      <p>I specialize in HTML, CSS, Javascript, jQuery, Bootstrap, WordPress, Shopify, and a whole host of other technologies, platforms, and libraries.</p>
+      
+
+      <p>I specialize in front-end development and WordPress integrations but my knowledge of multiple fields allows me to work on a project with the full scope in mind.</p>
+      <h2 class="headline--centered">See some of my work below.</h2>
+      </div>
+    </div>
+    
+    
+    </div>
+  </div>
+</div>
+
+  <div id="skills" class="page-section">
+   <div class="wrapper">
+      <h2 class="headline__title headline--centered"><strong>SKILLS </strong><span class="headline--bracket">}</span></h2>
+      <h3>Full Stack Web Development</h3>
+      <img src="assets/images/html.png">
+      <p>HTML5</p>
+      <img src="assets/images/css.png">
+      <p>CSS3</p>
+      <img src="assets/images/js.png">
+      <p>JavaScript</p>
+      <img src="assets/images/jquery.png">
+      <p>jQuery</p>
+      <img src="assets/images/node.png">
+      <p>Nodejs</p>
+      <img src="assets/images/mongo.png">
+      <p>MongoDB</p>
+      <img src="assets/images/git.png">
+      <p>Git</p>
+      <img src="assets/images/github.png">
+      <p>GitHub</p>
+      <img src="assets/images/wordpress.png">
+      <p>WordPress</p>
+      <img src="assets/images/photoshop.png">
+      <p>PhotoShop</p>
+      <img src="assets/images/maya.png">
+      <p>Maya</p>
+    </div>
   </div>
 
-  <div id="about">
-    <h2>ABOUT ME</h2>
-    <img src="assets/images/jg.png" alt="Jorge Garcia">
-    <h2>Jorge Garcia</h2>
-    <h3>Contact Me</h3>
-    <span>social media icons</span>
-    <p>I have many years experience as a front-end developer, creating websites fully responsive, and tested in a wide range of devices.
+<div id="portfolio" class="page-section page-section--lgray">
+  <div class="wrapper">
+    <h2 class="headline__title headline--centered">PORTFOLIO </strong><span class="headline--bracket">}</span></h2>
+      
+    <div>
+    <img src="assets/images/ct.png">
+    <h3>Creative Thinkers</h3>
+    <h3>Wordpress Web Design</h3>
+    </div>
 
+    <div>
+    <img src="assets/images/ct.png">
+    <h3>Creative Thinkers</h3>
+    <h3>Wordpress Web Design</h3>
+    </div>
 
-I specialize in HTML, CSS, Javascript, jQuery, Bootstrap, WordPress, Shopify, and a whole host of other technologies, platforms, and libraries.
+    <div>
+    <img src="assets/images/ct.png">
+    <h3>Creative Thinkers</h3>
+    <h3>Wordpress Web Design</h3>
+    </div>
 
+    <div>
+    <img src="assets/images/ct.png">
+    <h3>Creative Thinkers</h3>
+    <h3>Wordpress Web Design</h3>
+    </div>
 
-I specialize in front-end development and WordPress integrations but my knowledge of multiple fields allows me to work on a project with the full scope in mind.</p>
-<p>See some of my work below.</p>
+    <div>
+    <img src="assets/images/ct.png">
+    <h3>Creative Thinkers</h3>
+    <h3>Wordpress Web Design</h3>
+    </div>
+
+    <div>
+    <img src="assets/images/ct.png">
+    <h3>Creative Thinkers</h3>
+    <h3>Wordpress Web Design</h3>
+    </div>
   </div>
-
-  <div id="skills">
-    <h2>SKILLS</h2>
-      <img src="assets/images/icons/db.png">
-    <h3>Full Stack Web Development</h3>
-    <img src="assets/images/html.png">
-    <p>HTML5</p>
-    <img src="assets/images/css.png">
-    <p>CSS3</p>
-    <img src="assets/images/js.png">
-    <p>JavaScript</p>
-    <img src="assets/images/jquery.png">
-    <p>jQuery</p>
-    <img src="assets/images/node.png">
-    <p>Nodejs</p>
-    <img src="assets/images/mongo.png">
-    <p>MongoDB</p>
-    <img src="assets/images/git.png">
-    <p>Git</p>
-    <img src="assets/images/github.png">
-    <p>GitHub</p>
-    <img src="assets/images/wordpress.png">
-    <p>WordPress</p>
-    <img src="assets/images/photoshop.png">
-    <p>PhotoShop</p>
-    <img src="assets/images/maya.png">
-    <p>Maya</p>
-  </div>
-
-<div id="portfolio">
-    <h2>PORTFOLIO</h2>
-      <img src="assets/images/icons/db.png">
-    <div>
-    <img src="assets/images/ct.png">
-    <h3>Creative Thinkers</h3>
-    <h3>Wordpress Web Design</h3>
-    </div>
-
-    <div>
-    <img src="assets/images/ct.png">
-    <h3>Creative Thinkers</h3>
-    <h3>Wordpress Web Design</h3>
-    </div>
-
-    <div>
-    <img src="assets/images/ct.png">
-    <h3>Creative Thinkers</h3>
-    <h3>Wordpress Web Design</h3>
-    </div>
-
-    <div>
-    <img src="assets/images/ct.png">
-    <h3>Creative Thinkers</h3>
-    <h3>Wordpress Web Design</h3>
-    </div>
-
-    <div>
-    <img src="assets/images/ct.png">
-    <h3>Creative Thinkers</h3>
-    <h3>Wordpress Web Design</h3>
-    </div>
-
-    <div>
-    <img src="assets/images/ct.png">
-    <h3>Creative Thinkers</h3>
-    <h3>Wordpress Web Design</h3>
-    </div>
 
 
   </div>
 
   <footer>
-    <p>&copy; Copyright 2017 pixelsJG. All rights reserved. <a href="#">Contact Me</a></p>
+    <p>&copy; Copyright 2017 pixelsJG. All rights reserved. <a href="#" class="btn">Contact Me</a></p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,70 @@
+
+.row {
+
+	@mixin clearfix;
+
+	&--gutters > div {
+		padding-right: 15px;
+		padding-left: 20px;
+
+}
+&--gutters {
+		padding-right: -15px;
+
+}
+
+&--image {
+	max-width: 150px;
+	max-height: 250px;
+	@mixin atSmall {
+		max-width: 225px;
+		max-height: 325px;
+	}
+}
+
+@mixin atMedium {
+	&__medium-4 {
+		float: left;
+		width: 33.33%;
+		max-width: 250px;
+		min-width: 80px;
+	}
+
+	&__medium-4--larger {
+		width: 37%;
+		float: ;
+	}
+
+		
+	
+
+	&__medium-8 {
+		float: left;
+		width: 66.66%;
+	}
+
+	&__medium-8--smaller {
+		width: 63%;
+	}
+}
+	
+}
+
+.generic-content-container {
+
+	p {
+	line-height: 1.2;
+	
+	max-width: 600px;
+
+	@mixin atSmall {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	}
+
+	}
+	
+}
+
+
+

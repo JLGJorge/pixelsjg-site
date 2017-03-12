@@ -1,0 +1,66 @@
+.headline {
+	font-weight: 800;
+	color: $mainPurple;
+	font-size: 1.4rem;
+	font-family: "Arial";
+
+	&--centered {
+		text-align: center;
+		
+	}
+	&--bracket {
+		color: $mainGreen;
+		font-size: 1.8rem;
+
+			@mixin atSmall {
+		font-size: 2.3rem;
+		
+	}
+
+	@mixin atMedium {
+		font-size: 2.7rem;
+
+	}
+	@mixin atLarge {
+		font-size: 3.3rem;
+
+	}
+}
+
+	&__title {
+	font-weight: 800;
+	color: $mainPurple;
+	font-family: "Arial";
+	font-size: 1.6rem;
+	margin: 2px;
+	margin-bottom: 10px;
+	
+	@mixin atSmall {
+		font-size: 2.1rem;
+		margin: 5px;
+		margin-bottom: 15px;
+
+	}
+
+	@mixin atMedium {
+		font-size: 2.4rem;
+		margin: 18px;
+
+	}
+	@mixin atLarge {
+		font-size: 2.6rem;
+		margin: 20px;
+		margin-bottom: 20px;
+
+
+	
+	}
+  }
+  &--no-t-margin {
+  	margin-top: 0;
+  }
+  &--name {
+  	font-weight: 400;
+  	font-size: 1.4rem;
+  }
+}
