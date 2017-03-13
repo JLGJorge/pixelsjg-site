@@ -1,0 +1,110 @@
+.skills-subtitle {
+	font-size: 1.1rem;
+	text-align: center;
+	font-family: 'Droid Serif';
+	font-style: italic;
+	margin: 0;
+
+
+	@mixin atSmall {
+		font-size: 1.3rem;
+		margin: 5px;
+
+	}
+
+	@mixin atMedium {
+		font-size: 1.5rem;
+		margin: 8px;
+
+	}
+	@mixin atLarge {
+		font-size: 1.7rem;
+		margin: 10px;
+
+	}
+}
+
+/*  SECTIONS  */
+.skills {
+	clear: both;
+	
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	padding-right: 10px;
+	box-sizing: border-box;
+	padding: 10px 0;
+
+
+}
+.col-image {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.section:before,
+.section:after { content:""; display:table; }
+.section:after { clear:both;}
+.section { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 50%;
+}
+.span_2_of_4 {
+	width: 33.33%;
+}
+.span_1_of_4 {
+	width: 25%;
+}
+
+.span_1_of_4:nth-child(4n+1) { 
+	clear:left; 
+	margin-left: 0;
+	}
+
+.skills-wrapper {
+	padding-left: 50px;
+	padding-right: 20px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+
+}
+
+
+.skills__description {
+	color: $mainGray;
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-size: .9rem;
+	margin: 2px;
+
+	@mixin atSmall {
+		font-size: 1.1rem;
+		margin: 5px;
+	}
+
+	@mixin atMedium {
+		font-size: 1.2rem;
+		margin: 10px;
+	}
+	@mixin atLarge {
+		font-size: 1.3rem;
+		margin: 20px;
+	}
+}
+

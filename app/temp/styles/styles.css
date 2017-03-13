@@ -628,12 +628,51 @@ img {
 	padding: .6rem 1.2rem;
 	text-decoration: none;
 	font-size: .7rem;
+	margin: .5rem .5rem;
 }
 
 @media (min-width: 530px) {
 
   .btn {
     font-size: 1.2rem;
+    padding: 1rem 1.8rem;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.8rem;
+    border-radius: 3px;
+  }
+}
+
+.btn-purple {
+	background-color: #9A50D2;
+	color: #FFF;
+	border-radius: 1px;
+	display: inline-block;
+	padding: .6rem 1rem;
+	text-decoration: none;
+	font-size: .9rem;
+	margin: .5rem .5rem;
+}
+
+@media (min-width: 530px) {
+
+  .btn-purple {
+    font-size: 1.2rem;
+    padding: .8rem 1.5rem;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .btn-purple {
+    font-size: 1.4rem;
     padding: 1rem 1.8rem;
     border-radius: 3px;
   }
@@ -661,6 +700,8 @@ img {
 	color: #9A50D2;
 	font-size: 1.4rem;
 	font-family: "Arial";
+
+
 }
 
 .headline--centered {
@@ -737,6 +778,13 @@ img {
   font-size: 1.4rem;
 }
 
+.headline--font {
+  font-size: 1.2rem;
+  color: #29E561;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -801,6 +849,166 @@ img {
     line-height: 1.5;
   }
 }
+
+.skills-subtitle {
+	font-size: 1.1rem;
+	text-align: center;
+	font-family: 'Droid Serif';
+	font-style: italic;
+	margin: 0;
+}
+
+@media (min-width: 530px) {
+
+  .skills-subtitle {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .skills-subtitle {
+    font-size: 1.5rem;
+    margin: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .skills-subtitle {
+    font-size: 1.7rem;
+    margin: 10px;
+  }
+}
+
+/*  SECTIONS  */
+
+.skills {
+	clear: both;
+	
+}
+
+/*  COLUMN SETUP  */
+
+.col {
+	display: block;
+	float:left;
+	padding-right: 10px;
+	box-sizing: border-box;
+	padding: 10px 0;
+
+
+}
+
+.col-image {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+
+.section:before,
+.section:after { content:""; display:table; }
+
+.section:after { clear:both;}
+
+.section { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+
+.span_4_of_4 {
+	width: 100%;
+}
+
+.span_3_of_4 {
+	width: 50%;
+}
+
+.span_2_of_4 {
+	width: 33.33%;
+}
+
+.span_1_of_4 {
+	width: 25%;
+}
+
+.span_1_of_4:nth-child(4n+1) { 
+	clear:left; 
+	margin-left: 0;
+	}
+
+.skills-wrapper {
+	padding-left: 50px;
+	padding-right: 20px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+
+}
+
+.skills__description {
+	color: #4D4D4D;
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-size: .9rem;
+	margin: 2px;
+}
+
+@media (min-width: 530px) {
+
+  .skills__description {
+    font-size: 1.1rem;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .skills__description {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .skills__description {
+    font-size: 1.3rem;
+    margin: 20px;
+  }
+}
+
+.footer-section {
+	background-color: #4D4D4D;
+	color: #FFF;
+	padding: 1.5rem 0;
+	text-align: center;
+	font-size: .9rem;
+	font-weight: 200;
+}
+
+.footer-section__text {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+@media (min-width: 530px) {
+
+  .footer-section__text {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 1.4rem;
+    font-size: .9rem;
+  }
+}
+
 
 
 
