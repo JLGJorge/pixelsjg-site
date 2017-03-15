@@ -9,9 +9,18 @@
   <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 </head>
 <body>
-  <header>
-    <a href="index.html"><img src="assets/images/namelogo.png"></a>
-    <nav>
+  <header class="header-section">
+    <div class="wrapper">
+      <div class="header-section__logo">
+        <a href="index.html"><img src="assets/images/namelogo.png"></a>
+      </div>
+
+      <div class="header-section__menu-icon">
+      <div class="header-section__menu-icon__middle"></div>
+      </div>
+
+   <div class="header-section__menu-content">
+ <nav class="primary-nav primary-nav--pull-right">
       <ul>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
@@ -19,6 +28,8 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
+   </div>
+    </div>
   </header>
 
   <div class="large-hero">
@@ -48,7 +59,7 @@
          
             <p class="headline--name"><strong>Jorge Garcia</strong><br>
             <span>social media icons</span>
-            <p><a href="#" class="btn"><strong>CONTACT ME</strong></a></p>
+            <p><a href="#" class="btn-purple"><strong>CONTACT ME</strong></a></p>
             
         </div>
       </div>
@@ -173,6 +184,6 @@
   <footer class="footer-section">
     <p><span class="footer__text">&copy; Copyright 2017 pixelsJG. All rights reserved.</span> <a href="#" class="btn-purple">Contact Me</a></p>
   </footer>
- 
+ <script src="/temp/scripts/App.js"></script>
 </body>
 </html>
