@@ -6,7 +6,8 @@
 	transition: background-color .3s ease-out;
 
 	&--is-expanded {
-		background-color: $mainPurple;
+		background-color: rgba(154,80,210, .6);
+		
 
 	}
 

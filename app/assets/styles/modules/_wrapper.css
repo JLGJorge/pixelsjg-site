@@ -5,4 +5,13 @@
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+
+&__about {
+	padding-left: 40px;
+	padding-right: 40px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
 }

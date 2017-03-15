@@ -19,6 +19,7 @@
 	@mixin atSmall {
 		max-width: 225px;
 		max-height: 325px;
+		padding-top: 25px;
 	}
 }
 
