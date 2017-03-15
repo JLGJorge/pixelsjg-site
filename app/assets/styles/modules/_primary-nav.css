@@ -1,0 +1,52 @@
+.primary-nav {
+
+	&--pull-right {
+
+		@mixin atMedium {
+			float: right;
+		}
+		
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		@mixin clearfix;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding-right: 15px;
+
+		@mixin atMedium{
+			float: left;
+			display: block;
+
+		}
+	}
+
+	li:last-child {
+		padding-right: 0;
+
+	@mixin atMedium {
+		padding-right: 15px;
+
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #FFF;
+		font-family: 'Arial';
+		font-size: .9rem;
+		padding: 20px 0;
+		display: block;
+		
+		
+	}
+
+
+		
+	
+}
