@@ -18,6 +18,11 @@ browserSync = require('browser-sync').create();
 		watch('./app/assets/styles/**/*.css', function(){
 				gulp.start('cssInject');
 			});
+
+		watch('./app/assets/scripts/**/*.js', function(){
+				gulp.start('scriptsRefresh');
+			});
+
 		});
 
 	gulp.task('cssInject', ['styles'], function(){
@@ -25,3 +30,7 @@ browserSync = require('browser-sync').create();
 	.pipe(browserSync.stream());
 
 });
+
+	gulp.task('scriptsRefresh', ['scripts'], function() {
+		browserSync.reload();
+	});
