@@ -1047,7 +1047,11 @@ img {
 @media (min-width: 800px) {
 
   .header-section {
-    background-color: #4D4D4D;
+    position: fixed;/*background-color: $mainGray;*/
+  }
+
+  .header-section--dark {
+    background-color: rgba(77, 77, 77, .8);
   }
 }
 
@@ -1212,20 +1216,29 @@ img {
   color: #FFF;
   font-family: 'Arial';
   font-size: .9rem;
-  padding: 20px 0;
+  padding: 30px 0;
   display: block;
+}
+
+@media (min-width: 800px) {
+
+  .primary-nav a.is-current-link {
+    color: #29E561;
+  }
 }
 
 .reveal-item {
 	opacity: 0;
 	-webkit-transition: all 1.5s ease-out;
 	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
 }
 
-/*transform: scale(1.5);*/
-
 .reveal-item--is-visible {
-  opacity: 1;/*transform: scale(1);*/
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 

@@ -22,10 +22,10 @@
    <div class="header-section__menu-content">
  <nav class="primary-nav primary-nav--pull-right">
       <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about" id="about-link">ABOUT</a></li>
+        <li><a href="#skills" id="skills-link">SKILLS</a></li>
+        <li><a href="#portfolio" id="portfolio-link">PORTFOLIO</a></li>
+        <!--<li><a href="#contact" id="contant-link">CONTACT</a></li>-->
       </ul>
     </nav>
    </div>
@@ -49,7 +49,7 @@
     </div>
   </div>
   
-  <div id="about" class="page-section page-section--lgray">
+  <div id="about" class="page-section page-section--lgray" data-link="#about-link">
   <div class="wrapper wrapper__about">
     <h2 class="headline__title headline--centered"><strong>ABOUT ME </strong><span class="headline--bracket">}</span></h2>
     <div class="row row--gutters">
@@ -78,7 +78,7 @@
   </div>
 </div>
 
-  <div id="skills" class="page-section">
+  <div id="skills" class="page-section" data-link="#skills-link">
    <div class="wrapper">
       <h2 class="headline__title headline--centered"><strong>SKILLS </strong><span class="headline--bracket">}</span></h2>
       <h3 class="skills-subtitle">My Full Stack Skills</h3>
@@ -134,7 +134,7 @@
     </div>
   </div>
 
-<div id="portfolio" class="page-section page-section--lgray">
+<div id="portfolio" class="page-section page-section--lgray" data-link="#portfolio-link">
   <div class="wrapper">
     <h2 class="headline__title headline--centered">PORTFOLIO </strong><span class="headline--bracket">}</span></h2>
       
@@ -174,9 +174,8 @@
     <h3>Wordpress Web Design</h3>
     </div>
   </div>
+ </div>
 
-
-  </div>
 
   <footer class="footer-section">
     <p><span class="footer__text">&copy; Copyright 2017 pixelsJG. All rights reserved.</span> <a href="#" class="btn-purple">Contact Me</a></p>

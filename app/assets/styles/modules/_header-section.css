@@ -12,7 +12,12 @@
 	}
 
 	@mixin atMedium {
-		background-color: $mainGray;
+		position: fixed;
+		/*background-color: $mainGray;*/
+
+		&--dark {
+			background-color: rgba(77, 77, 77, .8);
+		}
 	}
 
 	&__logo {
