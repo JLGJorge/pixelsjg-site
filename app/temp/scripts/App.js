@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11077,7 +11077,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(5);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11219,6 +11219,72 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Modal = function () {
+	function Modal() {
+		_classCallCheck(this, Modal);
+
+		this.openModalButton = (0, _jquery2.default)('.open-modal');
+		this.modal = (0, _jquery2.default)('.modal');
+		this.closeModalButton = (0, _jquery2.default)('.modal__close');
+		this.events();
+	}
+
+	_createClass(Modal, [{
+		key: 'events',
+		value: function events() {
+			// clicking open modal button
+			this.openModalButton.click(this.openModal.bind(this));
+			// clicking the x button on modal
+			this.closeModalButton.click(this.closeModal.bind(this));
+			// clicking any key
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: 'keyPressHandler',
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeModal();
+			}
+		}
+	}, {
+		key: 'openModal',
+		value: function openModal() {
+			this.modal.addClass('modal--visible');
+			return false;
+		}
+	}, {
+		key: 'closeModal',
+		value: function closeModal() {
+			this.modal.removeClass('modal--visible');
+		}
+	}]);
+
+	return Modal;
+}();
+
+exports.default = Modal;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
@@ -11263,7 +11329,7 @@ var onScroll = function () {
 exports.default = onScroll;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11611,7 +11677,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11621,7 +11687,7 @@ var _mobileMenu = __webpack_require__(3);
 
 var _mobileMenu2 = _interopRequireDefault(_mobileMenu);
 
-var _onScroll = __webpack_require__(4);
+var _onScroll = __webpack_require__(5);
 
 var _onScroll2 = _interopRequireDefault(_onScroll);
 
@@ -11633,6 +11699,10 @@ var _StickyHeader = __webpack_require__(2);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _modal = __webpack_require__(4);
+
+var _modal2 = _interopRequireDefault(_modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var menu = new _mobileMenu2.default();
@@ -11640,6 +11710,8 @@ var menu = new _mobileMenu2.default();
 var onScroll = new _onScroll2.default();
 
 var stickyHeader = new _StickyHeader2.default();
+
+var modal = new _modal2.default();
 
 /***/ })
 /******/ ]);

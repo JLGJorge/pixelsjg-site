@@ -5,11 +5,13 @@
 	text-align: center;
 	font-size: .9rem;
 	font-weight: 200;
+	text-decoration: none;
 
 	&__text {
 		display: block;
 		margin-bottom: 1rem;
 		font-weight: 200;
+
 		
 		@mixin atSmall {
 			display: inline-block;

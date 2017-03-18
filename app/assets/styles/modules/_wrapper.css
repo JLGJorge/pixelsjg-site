@@ -14,4 +14,10 @@
 	margin-right: auto;
 
 	}
+
+	&--modal {
+		max-width: 470px;
+		text-align: center;
+	}
+	
 }

@@ -1,0 +1,68 @@
+.modal {
+	position: fixed;
+	z-index: 5;
+	
+	
+background: #8e9eab; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.2);
+	transition: all .3s ease-out;
+
+	&--visible {
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+
+	&__inner {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-60%);
+	}
+
+	&__description {
+	color: $mainGray;
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-size: 1rem;
+	margin: 2px;
+	text-align: center;
+
+	@mixin atMedium {
+		font-size: 1.3rem;
+
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		font-size: 1.6rem;
+		transform: scaleX(1.4);
+		color: #FFF;
+		border: 2px solid $mainGreen;
+		border-radius: 50%;
+		padding: 5px 5px;
+		background-color: $mainGreen;
+		cursor: pointer;
+
+		@mixin atSmall {
+			font-size: 2rem;
+		transform: scaleX(1.4);
+		}
+
+	&:hover {
+		color: $mainGray;
+		}
+	}
+
+}

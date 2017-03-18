@@ -636,7 +636,7 @@ img {
 
   .btn {
     font-size: 1.2rem;
-    padding: 1rem 1.8rem;
+    padding: 1rem 1.6rem;
     border-radius: 3px;
   }
 }
@@ -644,8 +644,8 @@ img {
 @media (min-width: 800px) {
 
   .btn {
-    font-size: 1.4rem;
-    padding: 1.2rem 1.8rem;
+    font-size: 1.2rem;
+    padding: 1rem 1.6rem;
     border-radius: 3px;
   }
 }
@@ -674,7 +674,7 @@ img {
 
   .btn-purple {
     font-size: 1.4rem;
-    padding: 1rem 1.8rem;
+    padding: .8rem 1.7rem;
     border-radius: 3px;
   }
 }
@@ -686,6 +686,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+	
 }
 
 .wrapper__about {
@@ -694,6 +695,11 @@ img {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.wrapper--modal {
+  max-width: 470px;
+  text-align: center;
 }
 
 .page-section {
@@ -1012,6 +1018,7 @@ img {
 	text-align: center;
 	font-size: .9rem;
 	font-weight: 200;
+	text-decoration: none;
 }
 
 .footer-section__text {
@@ -1239,6 +1246,209 @@ img {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.modal {
+	position: fixed;
+	z-index: 5;
+	
+	
+background: #8e9eab; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(right, #8e9eab , #eef2f3);
+background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.modal__inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.modal__description {
+  color: #4D4D4D;
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1rem;
+  margin: 2px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+
+  .modal__description {
+    font-size: 1.3rem;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.6rem;
+  -webkit-transform: scaleX(1.4);
+          transform: scaleX(1.4);
+  color: #FFF;
+  border: 2px solid #29E561;
+  border-radius: 50%;
+  padding: 5px 5px;
+  background-color: #29E561;
+  cursor: pointer;
+}
+
+@media (min-width: 530px) {
+
+  .modal__close {
+    font-size: 2rem;
+    -webkit-transform: scaleX(1.4);
+            transform: scaleX(1.4);
+  }
+}
+
+.modal__close:hover {
+  color: #4D4D4D;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.social-icons__icon {
+  margin: 100px 10px;
+}
+
+.social-icons .icons {
+  display: inline-block;
+}
+
+.social-icons--icons {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 530px) {
+
+  .social-icons--icons {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*  SECTIONS  */
+
+.section {
+	clear: both;
+	padding: auto;
+	margin: auto;
+}
+
+/*  COLUMN SETUP  */
+
+.col2 {
+	display: block;
+	float:left;
+	margin: 1% 0 0 1.6%;
+	
+}
+
+.col2:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+
+.group:before,
+.group:after { content:""; display:table; }
+
+.group:after { clear:both;}
+
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+
+.span_3_of_3 { width: 100%; }
+
+.span_2_of_3 { width: 66.13%; }
+
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 600px) {
+	
+	.col2 {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+li {
+	list-style: none;
+	text-align: left;
+
+}
+
+.websites-section {
+	height: 1100px;
+	background-color: #FFF;
+	margin-top: 10px;
+
+	
+}
+
+.websites-section__subtitle {
+  font-size: 1.1rem;
+  color: #9A50D2;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+
+  .websites-section__subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+.websites-section__description {
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+
+  .websites-section__description {
+    font-size: 1.2rem;
+  }
+}
+
+.websites-section__image {
+  margin: auto;
+  padding: auto;
+  display: block;
+  position: relative;
+}
+
+.websites-section__list {
+  width: 250px;
+  display: block;
+  margin: auto;
 }
 
 

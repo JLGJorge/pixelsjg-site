@@ -13,6 +13,10 @@
 @import "modules/_header-section";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
+@import "modules/_modal";
+@import "modules/_social-icons";
+@import "modules/_portfolio-section";
+@import "modules/_websites-section";
 
 
 
