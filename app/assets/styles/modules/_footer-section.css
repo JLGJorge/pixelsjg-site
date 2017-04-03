@@ -1,11 +1,12 @@
 .footer-section {
 	background-color: $mainGray;
 	color: #FFF;
-	padding: 1.5rem 0;
+	padding: 3.5rem 0;
 	text-align: center;
 	font-size: .9rem;
 	font-weight: 200;
 	text-decoration: none;
+	height: 125px;
 
 	&__text {
 		display: block;

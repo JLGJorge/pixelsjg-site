@@ -1,0 +1,19 @@
+.contact {
+
+}
+
+
+&__description {
+	color: $mainGray;
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-size: 1rem;
+	margin: 2px;
+	text-align: center;
+	text-decoration: none;
+
+	@mixin atMedium {
+		font-size: 1.3rem;
+
+		}
+	}

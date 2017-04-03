@@ -702,6 +702,12 @@ img {
   text-align: center;
 }
 
+.wrapper--contact {
+  max-width: 470px;
+  text-align: center;
+  height: 200px;
+}
+
 .page-section {
 	padding: 3.5rem 0;
 }
@@ -1014,11 +1020,12 @@ img {
 .footer-section {
 	background-color: #4D4D4D;
 	color: #FFF;
-	padding: 1.5rem 0;
+	padding: 3.5rem 0;
 	text-align: center;
 	font-size: .9rem;
 	font-weight: 200;
 	text-decoration: none;
+	height: 125px;
 }
 
 .footer-section__text {
@@ -1331,6 +1338,7 @@ img {
 
 .social-icons {
 	text-align: center;
+	margin: 0 0 50px 0;
 }
 
 .social-icons__icon {
@@ -1449,6 +1457,27 @@ li {
   width: 250px;
   display: block;
   margin: auto;
+}
+
+.contact {
+
+}
+
+&__description {
+	color: #4D4D4D;
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-size: 1rem;
+	margin: 2px;
+	text-align: center;
+	text-decoration: none;
+	}
+
+@media (min-width: 800px) {
+
+  &__description {
+    font-size: 1.3rem;
+  }
 }
 
 

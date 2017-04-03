@@ -19,5 +19,10 @@
 		max-width: 470px;
 		text-align: center;
 	}
+	&--contact {
+		max-width: 470px;
+		text-align: center;
+		height: 200px;
+	}
 	
 }

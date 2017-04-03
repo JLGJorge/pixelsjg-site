@@ -26,7 +26,7 @@
         <li><a href="#about" id="about-link">ABOUT</a></li>
         <li><a href="#skills" id="skills-link">SKILLS</a></li>
         <li><a href="#portfolio" id="portfolio-link">PORTFOLIO</a></li>
-        <!--<li><a href="#contact" id="contant-link">CONTACT</a></li>-->
+        <!--<li><a href="#contact" id="contact-link">CONTACT</a></li>-->
       </ul>
     </nav>
    </div>
@@ -45,7 +45,7 @@
       <h1 class="large-hero__title">Hi! I'm <span class="large-hero__myname">Jorge Garcia</span></h1>
       <h2 class="large-hero__subtitle">IT'S NICE TO MEET YOU</h2>
       <p class="large-hero__description">I'm a Web Designer and Developer.<br> I focus on fun, clean designs and sensible UX/UI.</p>
-      <p><a href="#" class="btn-purple open-modal"><strong>Contact Me</strong></a></p>
+      <p><a href="#contact" id="contact-link" class="btn-purple"><strong>Contact Me</strong></a></p>
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@
         <img class="row--image lazyload" data-srcset="assets/images/jg.png" alt="Jorge Garcia">
          
            
-            <p><a href="#" class="btn open-modal"><strong>Contact Me</strong></a></p>
+            <p><a href="#contact" id="contact-link" class="btn"><strong>Contact Me</strong></a></p>
             
         </div>
       </div>
@@ -154,29 +154,24 @@
     <div class="wrapper">
      <div class="section group">
       <div class="col2 span_1_of_3">
-      <a href="portfolio-4.html"><img class="lazyload" data-srcset="assets/images/CT.png">
+      <a href="portfolio-4.html"><img class="lazyload" data-srcset="assets/images/CT.png"></a>
       </div>
       <div class="col2 span_1_of_3">
-      <a href="portfolio-5.html"><img src="assets/images/tbSM.png">
+      <a href="portfolio-5.html"><img class="lazyload" data-srcset="assets/images/tbSM.png"></a>
       </div>
       <div class="col2 span_1_of_3">
-      <a href="portfolio-6.html"><img class="lazyload" data-srcset="assets/images/rgbSM.png">
+      <a href="portfolio-6.html"><img class="lazyload" data-srcset="assets/images/rgbSM.png"></a>
       </div>
     </div>
     </div>
   </div>
  </div>
- <a href="#"></a>
-  <footer class="footer-section">
-    <p><span class="footer__text">&copy; Copyright 2017 pixelsJG. All rights reserved.</span> <a href="#" class="btn-purple open-modal">Contact Me</a></p>
-  </footer>
-
-<div class="modal">
- <div class="modal__inner">
-    <h2 class="headline__title headline--centered">Get in Touch </strong><span class="headline--bracket">}</span></h2>
-    <div class="wrapper wrapper--modal">
-    <p class="modal__description">Contact me to learn about how I work and the value I can bring to a team or project.</p><br>
-  </div>
+ <!-- contact -->
+  <div id="contact" class="contact" data-link="#contact-link">
+   <div class="wrapper">
+       <h2 class="headline__title headline--centered">Get in Touch </strong><span class="headline--bracket">}</span></h2>
+    <div class="wrapper wrapper--contact">
+      <p class="contact__description">Contact me to learn about how I work and the value I can bring to a team or project.</p><br>
     <div class="social-icons">
       <a href="https://www.facebook.com/jgjorge" target="blank class="social-icons__icon"><img class="social-icons--icons" src="assets/images/icons/facebook.png"></a>
       <a href="https://www.linkedin.com/in/pixelsjg/" target="blank" class="social-icons__icon"><img class="social-icons--icons" src="assets/images/icons/linkedin.png"></a>
@@ -184,8 +179,14 @@
       <a href="mailto:pixelsjg@gmail.com" class="social-icons__icon"><img class="social-icons--icons" src="assets/images/icons/email.png"></a>
     </div>
  </div>
-    <div class="modal__close">X</div>
-  </div>
+</div>
+</div>
+ <!-- contact -->
+
+  <footer class="footer-section"> 
+    <p><span class="footer__text">&copy; Copyright 2017 pixelsJG. All rights reserved.</span> 
+  </footer>
+
 
  <script src="/temp/scripts/App.js"></script>
 </body>
