@@ -1460,7 +1460,12 @@ li {
 }
 
 .contact {
+height: 500px;
+background-color: white;
+}
 
+.contact--title {
+  padding-top: 75px;
 }
 
 &__description {
